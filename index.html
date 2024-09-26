@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق تسميع الكلمات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>تسميع الكلمات</h1>
+
+    <label for="arabicWords">أدخل جميع الكلمات بالعربية (افصل بينها بفاصلة):</label>
+    <input type="text" id="arabicWords" placeholder="مثال: كلمة, مدرسة, سيارة" />
+
+    <label for="wordCount">اختر عدد الكلمات للتسميع:</label>
+    <input type="number" id="wordCount" />
+
+    <button onclick="startTest()">ابدأ التسميع</button>
+
+    <div id="testSection" style="display:none;">
+        <h2>التسميع</h2>
+        <div id="wordsList"></div>
+        <button onclick="checkAnswers()">تحقق من الإجابات</button>
+        <p id="resultMessage"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
